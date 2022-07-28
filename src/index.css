@@ -4,11 +4,27 @@
   box-sizing: border-box;
 }
 
+.app {
+  display: flex;
+  flex-direction: row;
+}
 
-.topNavbar {
+.movie-list {
+  max-width: 40em;
+  margin: auto;
+}
+
+.movie-list > div {
+  border-bottom: solid 1px grey;
+  padding-bottom: 1em;
+  min-width: 20em;
+}
+
+
+nav {
   position: fixed;
   overflow: hidden;
-  background-color: rgb(193, 76, 41);
+  background-color: rgb(193, 41, 66);
   top: 0;
   left: 0;
   right: 0;
