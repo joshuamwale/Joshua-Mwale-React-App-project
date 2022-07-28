@@ -10,14 +10,16 @@
 }
 
 .movie-list {
-  max-width: 40em;
+  max-width: 30em;
   margin: auto;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 .movie-list > div {
   border-bottom: solid 1px grey;
   padding-bottom: 1em;
-  min-width: 20em;
+  min-width: 10em;
 }
 
 
@@ -27,11 +29,11 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  height: 50vh;
-  min-height: 400px;
+  height: 60vh;
+  min-height: 500px;
   padding: 1rem;
-  font-size: 1.5em;
-  color: brown;
+  font-size: 3.5em;
+  color: rgb(221, 42, 18);
 }
 
 #home {

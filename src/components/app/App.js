@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../navbar/Navbar";
 import Home from "../home/Home";
 import MovieList from "../movielist/MovieList";
-//import MovieForm from "../movieform/MovieForm";
+import MovieForm from "../movieform/MovieForm";
 
 
 function App() {
     const [movies, setMovies] = useState([]);
+    const [showMovieForm, setMovieForm] = React.useState(false);
 
     //adding the useEffect hook to the side-effect event
 
@@ -25,6 +26,12 @@ function App() {
         <div className="App">
           <Navbar/>  
           <Home/>
+            <div className="sidebar">
+               <button onClick={() => setMovieForm(true)}>
+                Toggle form
+               </button>
+               {showMovieForm ? <MovieForm /> : null}
+            </div>
           <MovieList items={movies}/>
         </div>
     );
