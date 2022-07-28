@@ -1,7 +1,7 @@
 import React from "react";
 
 function Navbar() {
-    const links = ["Home","MovieList", "Movie", "MovieForm"];
+    const links = ["Home","MovieList", "MovieForm"];
 
     const navlinks = links.map((link) => (
         <a key={link} href={"#" + link.toLowerCase()}>

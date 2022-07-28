@@ -4,9 +4,9 @@ import Movie from "../movie/Movie";
 function MovieList({items}) {
 
     return (
-        <div id="movie-list">
+        <div className="movie-list">
             {items.map((movie) => {
-                return <Movie items={movie} key={movie.id}/>
+                return <Movie item={movie} key={movie.id}/>
             })}
         </div>
     );
