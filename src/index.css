@@ -103,6 +103,8 @@ form.movieform {
   padding: 1em;
   display: flex;
   flex-direction: column;
+  min-height: 75vh;
+  max-height: 100vh;
 }
 
 form.movieform > textarea,
@@ -121,7 +123,17 @@ form.movieform > input {
 .movieform-title {
 align-items: center;
 background-color: aqua;
-tab-size: 0in;
+min-height: 2vh;
+max-height: 3vh;
+
+}
+
+.movieform-img {
+background-color: burlywood;
+size: 1em;
+align-items: center;
+min-height: 5vh;
+max-height: 10vh;
 }
 
 input[type="submit"],
