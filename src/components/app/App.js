@@ -13,7 +13,7 @@ function App() {
     //adding the useEffect hook to the side-effect event
 
     useEffect(() => {
-        fetch("http://localhost:8000/movies")
+        fetch("https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010")
         .then((response) => response.json())
         .then((movies) => {
             //console.log(movies)

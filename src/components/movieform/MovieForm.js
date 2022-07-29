@@ -19,7 +19,7 @@ function handleSubmit(e) {
 
     //console-logging(movieData)
 
-    fetch("http://localhost:8000/movies", {
+    fetch("https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

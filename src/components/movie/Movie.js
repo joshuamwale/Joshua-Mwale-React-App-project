@@ -10,7 +10,7 @@ function Movie({item}) {
     }
 
     function handleDeleteClick() {
-        fetch(`http://localhost:8000/movies/${item.id}`, {
+        fetch(`https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010/${item.id}`, {
             method: "DELETE",
         })
         .then((response) => response.json())
