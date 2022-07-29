@@ -3,6 +3,7 @@ import Navbar from "../navbar/Navbar";
 import Home from "../home/Home";
 import MovieList from "../movielist/MovieList";
 import MovieForm from "../movieform/MovieForm";
+import { BrowserRouter as Router, Routes, Link, Route } from "react-router-dom";
 
 
 function App() {
@@ -26,15 +27,51 @@ function App() {
         <div className="App">
           <Navbar/>  
           <Home/>
-            <div className="sidebar">
+          <MovieList items={movies}/>
+          <div className="sidebar">
                <button onClick={() => setMovieForm(true)}>
                 Click here to add your favorite
                </button>
                {showMovieForm ? <MovieForm /> : null}
             </div>
-          <MovieList items={movies}/>
         </div>
     );
 }
 
+function FinalApp() {
+  const [movies, setMovies] = useState([]);
+    
+
+    //adding the useEffect hook to the side-effect event
+
+    useEffect(() => {
+        fetch("http://localhost:8000/movies")
+        .then((response) => response.json())
+        .then((movies) => {
+            //console.log(movies)
+            setMovies(movies)
+        
+        })
+    }, []);
+  return(
+    <Router>
+      <div>
+        {/* All routes go here*/}
+
+        <div className="navBar">
+            <Link className="active" to="/">Home</Link>
+            <Link to="/movielist">MovieList</Link>
+            <Link to="/movieform">MovieForm</Link>
+        </div>
+        <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/movielist" element={<MovieList items={movies}/>}/>
+          <Route exact path="/movieform" element={<MovieForm/>}/>
+        </Routes>
+      </div>
+    </Router>
+  )
+}
+
 export default App;
+export {FinalApp};

@@ -31,10 +31,11 @@ function handleSubmit(e) {
 }
 //form to call the handleSubmit event handler
   return (
-    <form className="movie-form" onSubmit={handleSubmit}>
+    <div className="movieformdiv">
+    <form className="movieform" onSubmit={handleSubmit}>
         <label>
             Title:
-            <input
+            <input className="movieform-title"
                 type="text"
                 title="title"
                 value={title}
@@ -61,6 +62,7 @@ function handleSubmit(e) {
         </label>
         <input type="submit" value="Describe your favorite movie" />
     </form>
+    </div>
   );
 }
 

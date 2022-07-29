@@ -1,22 +1,14 @@
 import React from "react";
 
 function Navbar() {
-    const links = ["Home","MovieList", "MovieForm"];
 
-    const navlinks = links.map((link) => (
-        <a key={link} href={"#" + link.toLowerCase()}>
-            {link}
-        </a>
-    ));
-    return (
-    <div>
-        <nav>
-            {navlinks}
-        </nav>
-    </div>
-    )
-
-
+    return(
+        <div className="navBar">
+            <a className="active" href="#home">Home</a>
+            <a href="#movielist">MovieList</a>
+            <a href="#movieform">MovieForm</a>
+        </div>
+    );
 }
 
 export default Navbar;
