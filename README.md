@@ -5,9 +5,9 @@ In this project, I am creating a movie listing app using React. It is a single p
 
 What I want users to get from this app is search for their favorite movies and also add to the existing offerings. 
 
-I am using external data using an API. The API url is: [https://imdb-api.com/en/API/SearchMovie/k_x652c43h/leon%20the%20professional"]
+I am using external data from a free to access API IMDB. The API url is: ["https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010"]
 
-https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010
+
 
 I created a base server for my project. The base URL for my backend is: [http://localhost:8000/movies]
 
