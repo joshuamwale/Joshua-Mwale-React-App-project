@@ -10,7 +10,7 @@ function Movie({item}) {
     }
 
     function handleDeleteClick() {
-        fetch(`https://imdb-api.com/en/API/SearchMovie/k_6rxyo4au/inception%202010/${item.id}`, {
+        fetch(`https://imdb-api.com/en/API/SearchMovie/k_x652c43h/leon%20the%20professional/${item.id}`, {
             method: "DELETE",
         })
         .then((response) => response.json())
