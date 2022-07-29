@@ -28,7 +28,7 @@ function App() {
           <Home/>
             <div className="sidebar">
                <button onClick={() => setMovieForm(true)}>
-                Toggle form
+                Click here to add your favorite
                </button>
                {showMovieForm ? <MovieForm /> : null}
             </div>

@@ -1,7 +1,8 @@
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .app {
@@ -9,26 +10,12 @@
   flex-direction: row;
 }
 
-.movie-list {
-  max-width: 30em;
-  margin: auto;
-  align-items: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-}
-
-.movie-list > div {
-  border-bottom: solid 1px grey;
-  padding-bottom: 1em;
-  min-width: 10em;
-}
-
-
 #home {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  text-align: right;
   height: 60vh;
   min-height: 500px;
   padding: 1rem;
@@ -40,6 +27,22 @@
   background-color: cornsilk;
 }
 
+.sidebar {
+  align-items: center;
+  min-width: 20em;
+  min-height: 100vh;
+  max-height: 200vh;
+  width: 100%;
+  border-right: solid black, 1px;
+  background: azure;
+  padding: 1em
+}
+ 
+.sidebar > button {
+  width: 100%;
+  height: 50%;
+  background-color: aqua;
+}
 nav {
   position: fixed;
   overflow: hidden;
@@ -69,14 +72,47 @@ nav a:active {
   font-size: larger;
 }
 
-#movielist,
-#movie {
-  display: flex;
+.movielist {
+  display: inline-block;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   height: 50vh;
-  min-height: 400px;
+  min-height: 100px;
+  max-height: 200px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 1rem;
+  background-color: cornsilk;
+}
+
+.movielist > div {
+  border-bottom: solid 2px rgb(128, 128, 128);
+  padding-bottom: 1em;
+  min-width: 10em;
+}
+
+form.movie-form {
+  border: solid black 1px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+form.movie-form > textarea,
+form.movie-form > input {
+  font-size: 1em;
+  font-family: sans-serif;
+  margin-bottom: 0.5em;
+}
+
+input[type="submit"],
+button {
+  font-weight: bold;
+  font-size: 1em;
+  background: #04e8ff;
+  border: solid black 1px;
+  padding: 0.5em;
+  cursor: pointer;
 }

@@ -4,7 +4,7 @@ import Movie from "../movie/Movie";
 function MovieList({items}) {
 
     return (
-        <div className="movie-list">
+        <div className="movielist">
             {items.map((movie) => {
                 return <Movie item={movie} key={movie.id}/>
             })}
