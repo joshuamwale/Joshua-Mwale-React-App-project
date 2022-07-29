@@ -93,6 +93,10 @@ nav a:active {
   min-width: 10em;
 }
 
+.movielist > div > button {
+  min-width: 6em;
+}
+
 form.movie-form {
   border: solid black 1px;
   padding: 1em;
