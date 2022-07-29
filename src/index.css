@@ -114,6 +114,8 @@ form.movieform > input {
 
 .movieformdiv {
   margin-top: 200px;
+  align-items: center;
+  background-color: cornsilk;
 }
 input[type="submit"],
 button {
