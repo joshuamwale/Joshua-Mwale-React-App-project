@@ -1,7 +1,9 @@
 # Phase 2 Project: Joshua Mwale React Project App
 
 Description
-In this project, I am creating a movie listing app using React. It is a single page application. I have five components that include App.js (parent component), Home (landing page), MovieList (my movie container), MovieForm, Movie and Navbar.
+In this project, I am have created a movie listing app using React. It is a single page application. I have five components that include App.js (parent component), Home (landing page), MovieList (my movie container), MovieForm, Movie and Navbar.
+
+The github link(remote repository) for my project is: [https://github.com/joshuamwale/Joshua-Mwale-React-App-project]
 
 What I want users to get from this app is search for their favorite movies and also add to the existing offerings. 
 
