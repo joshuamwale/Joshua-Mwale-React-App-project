@@ -44,7 +44,7 @@ function handleSubmit(e) {
         </label>
         <label>
             img
-            <input
+            <input className="movieform-img"
             type="href link"
             img="img"
             value={img}
@@ -53,7 +53,7 @@ function handleSubmit(e) {
         </label>
         <label>
             Description
-            <textarea
+            <textarea className="movieform-description"
                   type="text"
                   description="description"
                   value={description}
