@@ -60,7 +60,7 @@ function handleSubmit(e) {
                   placeholder="Describe your favorite movie here..." rows={5}
                   onChange={(e) => setDescription(e.target.value)}/>
         </label>
-        <input type="submit" value="Describe your favorite movie" />
+        <input type="submit" value="Add, describe and submit your favorite movie" />
     </form>
     </div>
   );

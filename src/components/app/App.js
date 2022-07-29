@@ -30,7 +30,7 @@ function App() {
           <MovieList items={movies}/>
           <div className="sidebar">
                <button onClick={() => setMovieForm(true)}>
-                Click here to add your favorite
+                Describe and submit your favorite
                </button>
                {showMovieForm ? <MovieForm /> : null}
             </div>

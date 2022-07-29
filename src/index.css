@@ -136,6 +136,13 @@ min-height: 5vh;
 max-height: 10vh;
 }
 
+.movieform-description {
+  background-color: white;
+  min-height: 10vh;
+  max-height: 30vh;
+  justify-self: left;
+}
+
 input[type="submit"],
 button {
   font-weight: bold;
