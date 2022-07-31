@@ -19,7 +19,7 @@ function handleSubmit(e) {
 
     //console-logging(movieData)
 
-    fetch("https://imdb-api.com/en/API/SearchMovie/k_x652c43h/leon%20the%20professional", {
+    fetch("https://joshua-mwale-react-app-j-serve.herokuapp.com/movies", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

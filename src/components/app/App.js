@@ -45,7 +45,7 @@ function FinalApp() {
     //adding the useEffect hook to the side-effect event
 
     useEffect(() => {
-        fetch("http://localhost:8000/movies")
+        fetch("https://joshua-mwale-react-app-j-serve.herokuapp.com/movies")
         .then((response) => response.json())
         .then((movies) => {
             //console.log(movies)
