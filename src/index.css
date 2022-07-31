@@ -107,8 +107,7 @@ form.movieform {
   max-height: 100vh;
 }
 
-form.movieform > textarea,
-form.movieform > input {
+form.movieform > textarea {
   font-size: 1em;
   font-family: sans-serif;
   margin-bottom: 0.5em;
@@ -150,5 +149,5 @@ button {
   background: #04e8ff;
   border: solid black 1px;
   padding: 0.5em;
-  cursor: pointer;
+  cursor: zoom-in;
 }
