@@ -13,7 +13,7 @@ function App() {
     //adding the useEffect hook to the side-effect event
 
     useEffect(() => {
-        fetch("https://imdb-api.com/en/API/SearchMovie/k_x652c43h/leon%20the%20professional")
+        fetch("https://joshua-mwale-react-app-j-serve.herokuapp.com/movies")
         .then((response) => response.json())
         .then((movies) => {
             //console.log(movies)
