@@ -12,3 +12,5 @@ What I want users to get from this app is for them to browse an existing list of
 I have incoporated external data from a free to access API from IMDB. The API url is: ["https://imdb-api.com/en/API/SearchMovie/k_x652c43h/leon%20the%20professional"]
 
 I created a REST API json-server for my project. The base URL for my backend is: [http://localhost:8000/movies]
+
+The backend repo for my project that I have deployed on Heroku is here: [https://github.com/joshuamwale/Joshua-Mwale-API]
